@@ -27,7 +27,7 @@ export default function Post({ post }) {
       <h1 className="text-5xl mt-4 font-semibold tracking-wide">
         {post.title}
       </h1>
-      {coverImage && <Image src={coverImage} alt="" className="mt-4" />}
+      {coverImage && <img src={coverImage} alt="" className="mt-4" />}
       <p className="text-sm font-light my-4">by {post.username}</p>
       <div className="mt-8">
         <ReactMarkdown className="prose">{post.content}</ReactMarkdown>

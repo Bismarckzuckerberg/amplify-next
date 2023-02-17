@@ -57,10 +57,10 @@ function CreatePost() {
       /> 
       {
         image && (
-          <Image src={URL.createObjectURL(image)} alt="" className="my-4" />
+          <img src={URL.createObjectURL(image)} alt="" className="my-4" />
         )
       }
-      <SimpleMDE value={post.content} onChange={value => setPost({ ...post, content: value })} />
+      <SimpleMDE   value={post.content} onChange={value => setPost({ ...post, content: value })} />
       <input
         type="file"
         ref={hiddenFileInput}

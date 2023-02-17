@@ -70,7 +70,7 @@ function EditPost() {
     <div>
       <h1 className="text-3xl font-semibold tracking-wide mt-6 mb-2">Edit post</h1>
       {
-        coverImage && <Image src={localImage ? localImage : coverImage} alt="" className="mt-4" />
+        coverImage && <img src={localImage ? localImage : coverImage} alt="" className="mt-4" />
       }
       <input
         onChange={onChange}
