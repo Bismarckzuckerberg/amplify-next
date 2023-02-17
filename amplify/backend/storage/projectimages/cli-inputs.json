@@ -1,0 +1,16 @@
+{
+  "resourceName": "projectimages",
+  "policyUUID": "7cf214b7",
+  "bucketName": "amplifynexte9b8dc69050a42ec8c43a29ddd638140",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
