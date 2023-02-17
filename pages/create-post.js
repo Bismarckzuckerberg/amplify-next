@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import SimpleMDE from "react-simplemde-editor"
 import "easymde/dist/easymde.min.css"
 import { createPost } from '../graphql/mutations'
+import Image from 'next/image'
 
 const initialState = { title: '', content: '' }
 
@@ -56,7 +57,7 @@ function CreatePost() {
       /> 
       {
         image && (
-          <img src={URL.createObjectURL(image)} className="my-4" />
+          <Image src={URL.createObjectURL(image)} alt="" className="my-4" />
         )
       }
       <SimpleMDE value={post.content} onChange={value => setPost({ ...post, content: value })} />

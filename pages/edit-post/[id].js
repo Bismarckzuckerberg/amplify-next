@@ -6,6 +6,8 @@ import "easymde/dist/easymde.min.css"
 import { v4 as uuid } from 'uuid'
 import { updatePost } from '../../graphql/mutations'
 import { getPost } from '../../graphql/queries'
+import Image from 'next/image'
+
 
 function EditPost() {
   const [post, setPost] = useState(null)
@@ -68,7 +70,7 @@ function EditPost() {
     <div>
       <h1 className="text-3xl font-semibold tracking-wide mt-6 mb-2">Edit post</h1>
       {
-        coverImage && <img src={localImage ? localImage : coverImage} className="mt-4" />
+        coverImage && <Image src={localImage ? localImage : coverImage} alt="" className="mt-4" />
       }
       <input
         onChange={onChange}
