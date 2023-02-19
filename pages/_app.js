@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Auth, Hub } from 'aws-amplify';
 import Head from 'next/head';
+import '@aws-amplify/ui-react/styles.css';
+
 
 function MyApp({ Component, pageProps }) {
   const [signedInUser, setSignedInUser] = useState(false);

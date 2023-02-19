@@ -1,5 +1,4 @@
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import '@aws-amplify/ui-react/styles.css';
 
 function Profile({ signOut, user }) {
   if (!user) return null;
